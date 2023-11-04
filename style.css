@@ -38,6 +38,7 @@ section{
 .heading{
     text-align: center;
     padding:2rem 0;
+    text-transform: uppercase;
     padding-bottom: 3rem;
     font-size: 3.5rem;
     color:var(--black);
@@ -46,6 +47,7 @@ section{
 .heading span{
     text-align: center;
     padding:2rem 0;
+    text-transform: uppercase;
     padding-bottom: 3rem;
     font-size: 3.5rem;
     color: var(--green);
@@ -601,6 +603,15 @@ section{
     display: block;
 }
 
+.footerLogo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--green);
+}
+
+.footerLogo i{
+    color:var(--green);
+}
 .footer .credit{
     text-align: center;
     margin-top: 2rem;
