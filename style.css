@@ -6,7 +6,7 @@
     --light-color: #fff;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
     --border:.2rem solid rgba(0,0,0,.1);
-    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid var(--black);
     --outline-hover:.2rem solid var(--black);
 }
 
@@ -28,7 +28,7 @@ html{
 }
 
 body{
-    background:#fff;
+    background: #fff;
 }
 
 section{
@@ -59,10 +59,10 @@ section{
     padding:.8rem 3rem;
     font-size: 1.7rem;
     border-radius: .5rem;
-    border:.2rem solid var(--green);
-    color: #fff;
+    border: var(--border);
+    color: var(--black);
     cursor: pointer;
-    background: #012;
+    background: var(--green);
 }
 
 .btn:hover{
@@ -78,7 +78,7 @@ section{
     align-items: center;
     justify-content: space-between;
     padding:2rem 9%;
-    background: #012;
+    background: var(--black);
 }
 
 .header .logo{
@@ -107,7 +107,7 @@ section{
     line-height: 4.5rem;
     border-radius: .5rem;
     background: #eee;
-    color: #012;
+    color: var(--black);
     font-size: 2rem;
     margin-left: .3rem;
     cursor: pointer;
@@ -116,7 +116,7 @@ section{
 
 .header .icons div:hover{
     background: var(--green);
-    color:#012;
+    color: var(--black);
 }
 
 #menu-btn{
@@ -147,14 +147,14 @@ section{
     background: none;
     text-transform: none;
     font-size: 1.6rem;
-    color: #012;
+    color: var(--black);
     padding:0 1.5rem;
 }
 
 .header .search-form label{
     font-size: 2.2rem;
     padding-right: 1.5rem;
-    color: #012;
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -266,7 +266,7 @@ section{
 .header .login-form p{
     font-size: 1.4rem;
     padding:.5rem 0;
-    color:#012;
+    color: var(--black);
 }
 
 .header .login-form p a{
@@ -301,7 +301,7 @@ section{
 
 .home .content .btn-home{
     color: #fff;
-    background-color: #012;
+    background-color: var(--black);
     border: none;
 }
 
@@ -319,7 +319,7 @@ section{
 
 .features .box-container .box{
     padding:3rem 2rem;
-    background: #012;
+    background: var(--black);
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
@@ -403,7 +403,7 @@ section{
 .categories .box-container .box{
     padding:3rem 2rem;
     border-radius: .5rem;
-    background:#012;
+    background: var(--black);
     box-shadow: var(--box-shadow);
     outline:var(--outline);
     outline-offset: -1rem;
@@ -438,7 +438,7 @@ section{
 }
 
 .review .review-slider .box{
-    background: #012;
+    background: var(--black);
     border-radius: .5rem;
     text-align: center;
     padding:3rem 2rem;
@@ -487,7 +487,7 @@ section{
     overflow: hidden;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    background:#012;
+    background: var(--black);
 }
 
 .blogs .box-container .box img{
@@ -538,7 +538,7 @@ section{
 }
 
 .footer{
-    background: #fff;
+    background: var(--light-color);
 }
 
 .footer .box-container{
@@ -586,14 +586,14 @@ section{
     width:3rem;
 }
 
-.footer .box-container .box .email{
+.footer .box-container .box .text{
     width: 100%;
     margin:.7rem 0;
     padding:1rem;
     border-radius: .5rem;
-    background: #fff;
+    border: var(--border);
     font-size: 1.6rem;
-    color: #012;
+    color: var(--black);
     text-transform: none;
 }
 
@@ -612,20 +612,14 @@ section{
 .footerLogo i{
     color:var(--green);
 }
-.footer .credit{
+
+.credit{
     text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
+    padding: 15px;
+    font-size: 1.3rem;
     color:var(--black);
-    border-top: var(--border);
+    background-color: var(--green)
 }
-
-.footer .credit span{
-    color: var(--green);
-}
-
 /* media queries  */
 
 @media (max-width:991px){
@@ -662,7 +656,7 @@ section{
         top:100%; right:-100%;
         box-shadow: var(--box-shadow);
         border-radius: .5rem;
-        background: #012;
+        background: var(--black);
     }
     .header .navbar.active{
         right:2rem;
