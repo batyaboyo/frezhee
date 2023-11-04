@@ -46,6 +46,7 @@ section{
 .heading span{
     color: var(--green);
     display: inline-block;
+    font-size: 3.5rem;
     padding:.5rem 3rem;
 }
 
@@ -391,9 +392,8 @@ section{
 }
 
 .categories .box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
@@ -641,16 +641,17 @@ section{
     .header .search-form{
         width:90%;
     }
+    .header {
+      width:100%;
+    }
 
-    .header .navbar{
+     .header .navbar{
         position: absolute;
         top:100%; right:-100%;
-        width:30rem;
         box-shadow: var(--box-shadow);
         border-radius: .5rem;
         background: #012;
     }
-
     .header .navbar.active{
         right:2rem;
         transition: .4s linear;
@@ -668,6 +669,10 @@ section{
 
     html{
         font-size: 50%;
+    }
+
+    .header {
+      width:100%;
     }
 
     .heading{
