@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --green: #00ff99;
+    --green: #0c1;
     --black: #012;
     --light-color: #fff;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -281,13 +281,12 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../image/bgimg.png');
-   /** background-position: center; */
-    background-size:cover;
-    margin: 10px;
+    background-image: url('image/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin-top: 5px
     padding: 10px;
 }
-
 .home .content{
     text-align: center;
     width:60rem;
@@ -295,11 +294,12 @@ section{
 
 .home .content h2{
     color: var(--green);
-    font-size: 5rem;
+    font-size: 5.5rem;
 } 
 .home .content p{
-    color: var(--black);
-    font-size: 2rem;
+    color: var(--light-color);
+    text-shadow: 1px 1px #012;
+    font-size: 3.5rem;
     padding: 25px;
 }
 
@@ -620,11 +620,135 @@ section{
 .credit{
     text-align: center;
     padding: 15px;
-    font-size: 1.3rem;
-    color:var(--black);
-    background-color: var(--green)
+    font-size: 2.3rem;
+    color:var(--green);
+    background-color: var(--black)
 }
+
+.container{
+  display: flex;
+  position: relative;
+  background: var(--light-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.container .forms{
+  height: auto;
+  width: 50%;
+  background: var(--light-color);
+}
+.container .form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forms .form-content .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.forms .form-content .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 45px;
+  background: var(--green);
+}
+.forms .signup-form  .title:before{
+  width: 65px;
+}
+.forms .form-content .input-boxes{
+  margin-top: 30px;
+}
+.forms .form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.form-content .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: var(--green);
+}
+.form-content .input-box i{
+  position: absolute;
+  color: var(--green);
+  font-size: 17px;
+}
+.forms .form-content .text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .text a{
+  text-decoration: underline;
+  color: var(--green);
+}
+.forms .form-content .text a:hover{
+  text-decoration: underline;
+}
+.forms .form-content .button{
+  color: var(--light-color);
+  margin-top: 40px;
+}
+.forms .form-content .button input{
+  color: var(--black);
+  background: var(--green);
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.forms .form-content .button input:hover{
+  background: var(--green);
+}
+.forms .form-content label{
+  color: var(--green);
+  cursor: pointer;
+}
+.forms .form-content label:hover{
+  text-decoration: underline;
+}
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text{
+  text-align: center;
+  margin-top: 25px;
+}
+
 /* media queries  */
+
+@media (max-width: 768px) {
+  .container .forms{
+    width: 100%;
+  }
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: 100%;
+  }
+}
+
 
 @media (max-width:991px){
 
@@ -702,3 +826,5 @@ section{
     }
 
 }
+
+
